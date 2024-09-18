@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "dist",
+      "baseUrl": ".",
+      "paths": {
+        "@controllers/*": ["src/controllers/*"],
+        "@models/*": ["src/models/*"],
+      }
+    },
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ],
+    "typeAcquisition": {
+      "include": ["jest"]
+    }
+}
