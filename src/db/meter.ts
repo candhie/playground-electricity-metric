@@ -1,6 +1,6 @@
 import pgFormat from "pg-format";
 import { pool } from "../config/db";
-import { Meter } from "@models/meter";
+import { Meter } from "../models/meter";
 
 const selectAll = (): Promise<Meter[]> => {
     return new Promise((resolve, reject) => {

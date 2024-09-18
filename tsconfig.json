@@ -3,12 +3,10 @@
       "esModuleInterop": true,
       "target": "es6",
       "module": "commonjs",
+      // "target": "ES2020",
+      // "module": "ESNext",
       "outDir": "dist",
-      "baseUrl": ".",
-      "paths": {
-        "@controllers/*": ["src/controllers/*"],
-        "@models/*": ["src/models/*"],
-      }
+      "baseUrl": "./src",
     },
     "include": [
       "src/**/*.ts"

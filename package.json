@@ -2,16 +2,14 @@
   "name": "playground-electricity-metric",
   "version": "1.0.0",
   "description": "metric consumption",
-  "main": "index.ts",
   "scripts": {
     "start": "npm run serve",
     "dev": "concurrently \"npm run build:watch\" \"npm run serve:watch\"",
-    "serve": "node dist/index.ts",
+    "serve": "node dist/index.js",
     "serve:watch": "nodemon index.ts",
     "build": "tsc",
     "build:watch": "tsc -w",
-    "test": "jest",
-    "test:watch": "mocha --watch ./src/**/__tests__/*.test.js"
+    "test": "jest"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
@@ -25,6 +23,7 @@
     "pg-format": "^1.0.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
     "@babel/node": "^7.25.0",
     "@babel/preset-env": "^7.25.4",
@@ -44,7 +43,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
   },
-  "type": "module",
   "author": "Candhie Ikhwan",
   "license": "ISC"
 }
